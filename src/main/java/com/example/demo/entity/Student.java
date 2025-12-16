@@ -1,11 +1,11 @@
 package com.example.demo.entity;
 public class Student{
-    private long id;
+    private Long id;
     private String name;
     private String email;
     private float cgpa;
 
-    public long setId(){
+    public Long setId(){
         return id;
     }
     public void getId(Long id){
@@ -26,7 +26,13 @@ public class Student{
     public float setCgpa(){
         return cgpa;
     }
-    public void getCgpa(Float cgpa){
+    public void getCgpa(float cgpa){
         this.cgpa=cgpa;
     }
+}
+public Student(Long id,String name,String email,float cgpa){
+    this.id=id;
+    this.name=name;
+    this.email=email;
+    this.cgpa=cgpa;
 }
