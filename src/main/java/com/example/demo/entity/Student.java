@@ -5,20 +5,19 @@ import jakarta.persistence.*;
 public class Student {
 
 @Id
-@GeneratedValue(strategy = GenerationType. IDENTITY)
-private int id;
-// @Column(name="name")
-
+@GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
+
     private String name;
     private String email;
     private float cgpa;
 
-    public Long setId(){
+    public Long getId() {
         return id;
     }
-    public void getId(Long id){
-        this.id=id;
+
+    public void setId(Long id) {
+        this.id = id;
     }
     public String setName(){
         return name;
@@ -46,6 +45,6 @@ private int id;
     }
     public Student()
     {
-        
+
     }
 }
