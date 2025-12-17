@@ -6,7 +6,7 @@ import jakarta.persistence.*;
 public class Student {
 
 @Id
-// @GeneratedValue(strategy = GenerationType. IDENTITY)
+@GeneratedValue(strategy = GenerationType. IDENTITY)
 private int id;
 // @Column(name="name")
 
@@ -46,4 +46,5 @@ public Student(Long id,String name,String email,float cgpa){
     this.name=name;
     this.email=email;
     this.cgpa=cgpa;
+}
 }
