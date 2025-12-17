@@ -9,7 +9,6 @@ public class Student {
 private int id;
 // @Column(name="name")
 
-public class Student{
     private Long id;
     private String name;
     private String email;
@@ -44,5 +43,9 @@ public class Student{
         this.name=name;
         this.email=email;
         this.cgpa=cgpa;
+    }
+    public Student()
+    {
+        
     }
 }
