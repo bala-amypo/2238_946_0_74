@@ -66,5 +66,5 @@
 // }
 
 
-Remove-Item -Force "C:\path\to\database.db"
-Remove-Item -Force "C:\path\to\*.mv.db"
+find /workspace -name "*.db" -delete
+find /workspace -name "*.mv.db" -delete
